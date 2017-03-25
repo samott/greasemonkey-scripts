@@ -97,8 +97,8 @@ var CyrillicKeyboard = {
 		var keyCase = CyrillicKeyboard.isShifted ? 0 : 1;
 		elem.value += CyrillicKeyboard.chars[this.getAttribute('keyID')][keyCase];
 
-	  if (CyrillicKeyboard.isShifted)
-		  CyrillicKeyboard.toggleShift();
+		if (CyrillicKeyboard.isShifted)
+			CyrillicKeyboard.toggleShift();
 	},
 
 	create: function(elem) {
